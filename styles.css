@@ -1,0 +1,72 @@
+body {
+    font-family: 'Mukta', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.game-container {
+    text-align: center;
+}
+
+.keyboard-container {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.keyboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.keyboard button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border: 1px solid #aaa;
+    background-color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.keyboard button:hover {
+    background-color: #ddd;
+}
+
+#toggle-keyboard {
+    display: block;
+    margin: 10px auto;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#toggle-keyboard:hover {
+    background-color: #388e3c;
+}
+
+.grid {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.cell {
+    width: 60px;
+    height: 60px;
+    margin: 2px;
+    border: 2px solid #888;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
